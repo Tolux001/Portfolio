@@ -31,7 +31,7 @@ body {
 	cursor: default;
 	opacity: 0;
 	animation: slideRight 1s ease forwards;
-	animation-delay: 0.4s;
+	animation-delay: 0.1s;
 	cursor: pointer;
 }
 .nav-toggle img,
@@ -48,7 +48,7 @@ body {
 	transition: 0.3s;
 	opacity: 0;
 	animation: slideTop 0.5s ease forwards;
-	animation-delay: calc(0.2s * var(--i));
+	animation-delay: calc(0.1s * var(--i));
 }
 .navbar a:hover,
 .navbar a.active {
@@ -101,7 +101,7 @@ body {
 		cursor: pointer;
 		opacity: 0;
 		animation: slideLeft 1s ease forwards;
-		animation-delay: 0.4s;
+		animation-delay: 0.1s;
 	}
 	.nav-toggle img:hover {
 		color: #afacacd7;
@@ -110,12 +110,12 @@ body {
 	.navbar {
 		height: 0;
 		overflow: hidden;
-		transition: all 0.3s linear;
+		transition: all 0.2s linear;
 	}
 	.active-nav {
 		opacity: 0;
 		animation: slideTop 0.5s ease forwards;
-		animation-delay: 0.4s;
+		animation-delay: 0.1s;
 	}
 	.show-links {
 		height: 12.5rem;
@@ -129,35 +129,36 @@ body {
 .home-content {
 	max-width: 600px;
 }
-.home-content h3 {
-	font-size: 32px;
-	font-weight: 700;
+.home-content .h3 {
+	font-size: 2em;
+	font-weight: 600;
+	/* margin-bottom: 2px; */
 	opacity: 0;
 	animation: slideBottom 1s ease forwards;
-	animation-delay: 0.7s;
+	animation-delay: 0.2s;
 }
-.home-content h3:nth-of-type(2) {
+.home-content h3 {
 	margin-bottom: 30px;
+	/* margin-top: 10px; */
 	animation: slideTop 1s ease forwards;
-	animation-delay: 0.7s;
+	animation-delay: 0.2s;
 }
 .home-content h3 span {
 	color: #0ef;
 }
-.home-content h1 {
-	font-size: 3em;
+.home-content .h1 {
+	font-size: 2.5em;
 	font-weight: 900;
-	font-family: Arial, Helvetica, sans-serif, sans-serif;
-	margin: -3px 0;
+	font-family: Arial, Helvetica, sans-serif;
 	opacity: 0;
 	animation: slideRight 1s ease forwards;
-	animation-delay: 1s;
+	animation-delay: 0.3s;
 }
 .home-content p {
 	font-size: 16px;
 	opacity: 0;
 	animation: slideLeft 1s ease forwards;
-	animation-delay: 0.6s;
+	animation-delay: 0.3s;
 }
 .home-img img {
 	max-width: 450px;
@@ -167,7 +168,7 @@ body {
 	box-shadow: 0 5px 10px rgba(255, 255, 255, 1);
 	opacity: 0;
 	animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
-	animation-delay: 2s, 3s;
+	animation-delay: 0.5s, 0.5s;
 }
 .home-img img:hover {
 	filter: drop-shadow(0 1px 5px rgba(255, 255, 255, 1));
@@ -187,7 +188,7 @@ body {
 	cursor: pointer;
 	opacity: 0;
 	animation: slideLeft 1s ease forwards;
-	animation-delay: calc(0.2s * var(--i));
+	animation-delay: calc(0.1s * var(--i));
 }
 .social-media a img {
 	width: 26px;
@@ -214,7 +215,7 @@ body {
 	font-weight: 600;
 	opacity: 0;
 	animation: slideTop 1s ease forwards;
-	animation-delay: 2s;
+	animation-delay: 0.1s;
 }
 @media (max-width: 500px) {
 	.home-content h3 {
@@ -296,4 +297,20 @@ body {
 	100% {
 		transform: translateY(1);
 	}
+}
+
+.project--card {
+	margin: 5em 0;
+}
+
+.project--head {
+	text-align: center;
+	margin-bottom: 4rem;
+}
+
+.underline {
+	height: 0.25rem;
+	width: 5rem;
+	background: #0ef;
+	margin: 0 auto;
 }

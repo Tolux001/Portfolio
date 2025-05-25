@@ -18,14 +18,3 @@ navToggle.addEventListener("click", () => {
 		navToggle.style.transform = "rotate(450deg)";
 	}
 });
-
-window.addEventListener("scroll", () => {
-	if (window.scrollY > 80) {
-		h3.classList.add("active-h3");
-		h3Span.classList.add("active-h3-span");
-		h1.classList.add("active-h1");
-		par.classList.add("active-p");
-		socials.classList.add("active-a");
-		btn.classList.add("active-btn");
-	}
-});
