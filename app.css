@@ -34,6 +34,7 @@ body {
 	animation-delay: 0.4s;
 	cursor: pointer;
 }
+.nav-toggle img,
 .nav-toggle {
 	display: none;
 }
@@ -56,7 +57,7 @@ body {
 .home {
 	position: relative;
 	width: 100%;
-	min-height: 100vh;
+	min-height: 100dvh;
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-between;
@@ -87,10 +88,14 @@ body {
 		justify-content: space-between !important;
 		align-items: center;
 	}
+	.nav-toggle img,
 	.nav-toggle {
 		display: block;
-		font-size: 2rem;
+		width: 30px;
+		height: 30px;
 		color: rgb(253, 239, 239);
+		filter: invert(82%) sepia(30%) saturate(7438%) hue-rotate(140deg)
+			brightness(108%) contrast(105%);
 		background: transparent;
 		border-color: transparent;
 		cursor: pointer;
@@ -98,7 +103,7 @@ body {
 		animation: slideLeft 1s ease forwards;
 		animation-delay: 0.4s;
 	}
-	.nav-toggle:hover {
+	.nav-toggle img:hover {
 		color: #afacacd7;
 		transform: rotate(90deg);
 	}
@@ -140,9 +145,9 @@ body {
 	color: #0ef;
 }
 .home-content h1 {
-	font-size: 56px;
-	font-weight: 700;
-	font-family: "Playfair", sans-serif;
+	font-size: 3em;
+	font-weight: 900;
+	font-family: Arial, Helvetica, sans-serif, sans-serif;
 	margin: -3px 0;
 	opacity: 0;
 	animation: slideRight 1s ease forwards;
@@ -178,7 +183,7 @@ body {
 	border: 2px solid #0ef;
 	border-radius: 50%;
 	text-decoration: none;
-	margin: 30px 15px 30px 0;
+	margin: 10px 5px;
 	cursor: pointer;
 	opacity: 0;
 	animation: slideLeft 1s ease forwards;
@@ -191,13 +196,14 @@ body {
 		brightness(108%) contrast(105%);
 }
 .social-media a:hover {
-	background: #0ef;
-	fill: #eee;
+	background: rgb(178, 202, 204);
+	fill: #000000;
 	box-shadow: 0 0 20px #0ef;
 }
 .btn {
 	display: inline-block;
 	padding: 12px 28px;
+	margin: 20px 10px 0 0;
 	background: #0ef;
 	border-radius: 40px;
 	box-shadow: 0 0 10px #0ef;
