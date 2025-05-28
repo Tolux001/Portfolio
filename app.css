@@ -374,6 +374,20 @@ body {
 	font-weight: 600;
 	box-shadow: 0 0 20px rgba(241, 228, 228, 0);
 }
+
+.project-anchor:hover {
+	background: #0ef;
+	color: #1f242d;
+	box-shadow: 0 0 20px rgba(14, 239, 255, 0.5);
+}
+
 .project--text {
-	margin-top: 10px;
+	margin-top: 2em;
+	font-size: 16px;
+	color: #dad5d5;
+}
+
+.project--text > p {
+	margin-top: 1em;
+	font-weight: 600;
 }
