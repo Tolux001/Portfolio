@@ -391,3 +391,23 @@ body {
 	margin-top: 1em;
 	font-weight: 600;
 }
+
+.section--four {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5em;
+	padding: 4em 5%;
+	background: rgba(31, 36, 45, 0.8);
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	padding: 2em 5% 0 5%;
+	font-size: small;
+}
