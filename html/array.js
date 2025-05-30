@@ -56,7 +56,7 @@ let items = [
 		description: `Developers Profile card using react`,
 	},
 ];
-const projectContainer = document.querySelector(".project--section");
+const projectContainer = document.querySelector("#project--section");
 
 const projectItemFunction = (projects) => {
 	let projectList = projects.map((item) => {
