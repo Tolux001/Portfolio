@@ -56,7 +56,61 @@ let items = [
 		description: `Developers Profile card using react`,
 	},
 ];
+let certificationItems = [
+	{
+		id: 1,
+		img: "../images/prograte.png",
+		name: "Web Development Course(Node.js)",
+		anchor: `https://progate.com/path_certificate/e23f4e66rfr91h`,
+		span: "Progate",
+	},
+	{
+		id: 2,
+		img: "../images/citadel.png",
+		name: "Website Design and Development",
+		anchor: ``,
+		span: "Citadel Institute",
+	},
+	{
+		id: 3,
+		img: "../images/gdsc.jpg",
+		name: "Frontend Development(React.js)",
+		anchor: ``,
+		span: "Google Developer Group",
+	},
+	{
+		id: 4,
+		img: "../image",
+		name: "Meta: Introduction to Frontend Development",
+		anchor: `https://www.coursera.org/account/accomplishments/verify/ZS6GFFTAR8FR`,
+		span: "Coursera",
+	},
+	{
+		id: 5,
+		img: "../images",
+		name: "Meta: Version Control",
+		anchor: `https://www.coursera.org/account/accomplishments/verify/5TQ7W6KPALRM`,
+		span: "Coursera",
+	},
+	{
+		id: 6,
+		img: "../images",
+		name: "Meta: Javascript Mastery",
+		anchor: `https://tolux001.github.io/Cheese-Cake-For-Twitter/#`,
+		span: "Coursera",
+	},
+	{
+		id: 7,
+		img: "../images",
+		name: "Generative AI",
+		anchor: `https://tolux-dev-profile-card.netlify.app/`,
+		span: "Linkedin Learning",
+	},
+];
 const projectContainer = document.querySelector("#project--section");
+const certificationContainer = document.querySelector(
+	"#certification--section"
+);
 
 const projectItemFunction = (projects) => {
 	let projectList = projects.map((item) => {
@@ -84,6 +138,32 @@ const projectItemFunction = (projects) => {
 	projectContainer.innerHTML = projectList;
 };
 
+const certificationItemFunction = (projects) => {
+	let certificateList = projects.map((item) => {
+		return `
+		<div class="project--card--container">
+			<img src="${item.img}" alt="${item.name}" />
+			<div class="project--info">
+				<h2>${item.name}</h2>
+				<div>
+					<span>${item.span}</span>
+				</div>
+				<a class="project-anchor" href="${item.anchor}" target="_blank" rel="noopener noreferrer">
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
+					<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"></path>
+					<polyline points="15 3 21 3 21 9"></polyline>
+					<line x1="10" y1="14" x2="21" y2="3"></line>
+				</svg>
+				View Certificate
+				</a>
+			</div>
+		</div>`;
+	});
+	certificateList = certificateList.join("");
+	certificationContainer.innerHTML = certificateList;
+};
+
 window.addEventListener("DOMContentLoaded", () => {
 	projectItemFunction(items);
+	certificationItemFunction(certificationItems);
 });
