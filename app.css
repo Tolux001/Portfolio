@@ -335,7 +335,7 @@ body {
 	width: 100%;
 	max-width: 400px;
 	height: 32.5rem;
-	border-radius: 12px;
+	border-radius: 2em 0.25em 2em 0.25em;
 	padding: 1rem;
 	background: rgba(255, 255, 255, 0.1);
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -343,6 +343,7 @@ body {
 
 .project--card--container:hover {
 	transform: scale(1.05);
+	border-radius: 12px;
 	transition: 0.3s ease-in-out;
 }
 .project--card--container img {
@@ -368,7 +369,7 @@ body {
 	color: #000000;
 	width: 100%;
 	height: auto;
-	border-radius: 12px;
+	border-radius: 12px 4px 12px 4px;
 	padding: 0.8em 0;
 	text-align: center;
 	display: flex;
@@ -445,4 +446,31 @@ footer a {
 	font-size: 16px;
 	color: #dad5d5;
 	text-align: center;
+}
+.skills {
+	margin: 2em 0;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1em;
+	padding: 0 2em;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.skill {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid rgba(207, 203, 203, 0.5);
+	border-radius: 1em;
+	gap: 1em;
+	width: fit-content;
+	padding: 0.8em 1em;
+	/* box-shadow: 1px 1px 1px rgba(255, 255, 255, 1); */
+}
+
+.skill img {
+	width: 26px;
+	height: 26px;
 }
