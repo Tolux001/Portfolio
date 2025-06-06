@@ -107,10 +107,49 @@ let certificationItems = [
 		span: "Linkedin Learning",
 	},
 ];
+let skillItem = [
+	{
+		id: 1,
+		img: "../images/prograte.png",
+		name: "Web Development Course(Node.js)",
+	},
+	{
+		id: 2,
+		img: "../images/citadel.png",
+		name: "Website Design and Development",
+	},
+	{
+		id: 3,
+		img: "../images/gdsc.jpg",
+		name: "Frontend Development(React.js)",
+	},
+	{
+		id: 4,
+		img: "../image",
+		name: "Meta: Introduction to Frontend Development",
+	},
+	{
+		id: 5,
+		img: "../images",
+		name: "Meta: Version Control",
+	},
+	{
+		id: 6,
+		img: "../images",
+		name: "Meta: Javascript Mastery",
+	},
+	{
+		id: 7,
+		img: "../images",
+		name: "Generative AI",
+	},
+];
+
 const projectContainer = document.querySelector("#project--section");
 const certificationContainer = document.querySelector(
 	"#certification--section"
 );
+const skillsContainer = document.querySelector("#skills-container");
 
 const projectItemFunction = (projects) => {
 	let projectList = projects.map((item) => {
@@ -163,7 +202,20 @@ const certificationItemFunction = (projects) => {
 	certificationContainer.innerHTML = certificateList;
 };
 
+const skillItemFunction = (projects) => {
+	let skillList = projects.map((item) => {
+		return `
+		<div class="skill">
+	<img loading="lazy" src="${item.img}" alt="${item.name}" />
+	<p>"${item.name}"</p>
+</div>`;
+	});
+	skillList = skillList.join("");
+	skillsContainer.innerHTML = skillList;
+};
+
 window.addEventListener("DOMContentLoaded", () => {
 	projectItemFunction(items);
 	certificationItemFunction(certificationItems);
+	skillItemFunction(skillItem);
 });
