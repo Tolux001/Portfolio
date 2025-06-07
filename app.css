@@ -448,11 +448,11 @@ footer a {
 	text-align: center;
 }
 .skills {
-	margin: 2em 0;
+	margin: 2em auto;
+	width: min(768px, 95%);
 	display: flex;
 	flex-wrap: wrap;
 	gap: 1em;
-	padding: 0 2em;
 	justify-content: space-between;
 	align-items: center;
 }

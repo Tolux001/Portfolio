@@ -1,15 +1,31 @@
 let items = [
 	{
 		id: 4,
-		img: "../images/evntauth.png",
+		img: "../images/evntauth.jpg",
 		name: "Event Auth",
 		anchor: `https://eventauth.vercel.app/`,
 		span: "Next.js + TypeScript + Tailwind CSS + Firebase Auth + Firestore",
 		description: `An event management system that allows users to create, manage, and attend events. It includes user authentication, event creation, and a calendar view of upcoming events.`,
 	},
 	{
+		id: 4,
+		img: "../images/evntauth.jpg",
+		name: "Calm Mind",
+		anchor: `https://calm-mind-zeta.vercel.app/`,
+		span: "Next.js + TypeScript + Tailwind CSS + Shadcn + Firebase Auth + Firestore",
+		description: `A web app to help you check and keep track of your stress level, AI bot integration for communication.`,
+	},
+	{
+		id: 4,
+		img: "../images/evntauth.jpg",
+		name: "Swift Vote",
+		anchor: `https://swift-election-olaleyeag20s-projects.vercel.app/`,
+		span: "Next.js + TypeScript + Tailwind CSS + Firebase Auth + Firestore",
+		description: `School voting platform, flexible and rigid for any platform`,
+	},
+	{
 		id: 1,
-		img: "../images/dompro.png",
+		img: "../images/dompro.jpg",
 		name: "DOM PROJECTS",
 		anchor: `https://toluxdomproject.netlify.app/`,
 		span: "HTML + CSS + JS",
@@ -33,7 +49,7 @@ let items = [
 	},
 	{
 		id: 5,
-		img: "../images/prettycash.png",
+		img: "../images/prettycash.jpg",
 		name: "Petty Cash",
 		anchor: `https://pettycash-dummy.netlify.app/`,
 		span: "React.js",
@@ -41,7 +57,7 @@ let items = [
 	},
 	{
 		id: 6,
-		img: "../images/cake.png",
+		img: "../images/cake.jpg",
 		name: "Cake For Twitter Desktop",
 		anchor: `https://tolux001.github.io/Cheese-Cake-For-Twitter/#`,
 		span: "HTML + CSS + JS",
@@ -49,7 +65,7 @@ let items = [
 	},
 	{
 		id: 7,
-		img: "../images/card.png",
+		img: "../images/card.jpg",
 		name: "Profile Card",
 		anchor: `https://tolux-dev-profile-card.netlify.app/`,
 		span: "React.js",
