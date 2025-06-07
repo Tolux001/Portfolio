@@ -111,37 +111,92 @@ let skillItem = [
 	{
 		id: 1,
 		img: "../images/prograte.png",
-		name: "Web Development Course(Node.js)",
+		name: "TypeScript",
 	},
 	{
 		id: 2,
 		img: "../images/citadel.png",
-		name: "Website Design and Development",
+		name: "JavaScript",
 	},
 	{
 		id: 3,
 		img: "../images/gdsc.jpg",
-		name: "Frontend Development(React.js)",
+		name: "React.js",
 	},
 	{
 		id: 4,
 		img: "../image",
-		name: "Meta: Introduction to Frontend Development",
+		name: "HTML5",
 	},
 	{
 		id: 5,
 		img: "../images",
-		name: "Meta: Version Control",
+		name: "CSS3",
 	},
 	{
 		id: 6,
 		img: "../images",
-		name: "Meta: Javascript Mastery",
+		name: "Next.js",
 	},
 	{
 		id: 7,
 		img: "../images",
-		name: "Generative AI",
+		name: "Express.js",
+	},
+	{
+		id: 7,
+		img: "../images",
+		name: "Next.js",
+	},
+	{
+		id: 7,
+		img: "../images",
+		name: "Firebase",
+	},
+	{
+		id: 7,
+		img: "../images",
+		name: "Vercel",
+	},
+	{
+		id: 7,
+		img: "../images",
+		name: "Git",
+	},
+	{
+		id: 7,
+		img: "../images",
+		name: "GitHub",
+	},
+	{
+		id: 7,
+		img: "../images",
+		name: "VS Code",
+	},
+	{
+		id: 7,
+		img: "../images",
+		name: "Tailwind CSS",
+	},
+	{
+		id: 7,
+		img: "../images",
+		name: "Figma",
+	},
+	{
+		id: 7,
+		img: "../images",
+		name: "MongoDB",
+	},
+	{
+		id: 7,
+		img: "../images",
+		name: "Redux",
+	},
+	{
+		id: 7,
+		img: "../images",
+		name: "Python",
 	},
 ];
 
