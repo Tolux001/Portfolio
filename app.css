@@ -75,11 +75,11 @@ body {
 	.navbar a {
 		margin-left: 0;
 		display: block;
-		padding: 0.5rem 1rem;
+		padding: 1rem;
 		transition: 0.2s;
 	}
 	.navbar a:hover {
-		padding-left: 1.5rem;
+		padding-left: 2.5rem;
 	}
 	.mobile--div {
 		display: flex;
