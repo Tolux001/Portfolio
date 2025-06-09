@@ -9,7 +9,7 @@ let items = [
 	},
 	{
 		id: 4,
-		img: "../images/evntauth.jpg",
+		img: "../images/calmmind.jpg",
 		name: "Calm Mind",
 		anchor: `https://calm-mind-zeta.vercel.app/`,
 		span: "Next.js + TypeScript + Tailwind CSS + Shadcn + Firebase Auth + Firestore",
@@ -17,7 +17,7 @@ let items = [
 	},
 	{
 		id: 4,
-		img: "../images/evntauth.jpg",
+		img: "../images/swift.jpg",
 		name: "Swift Vote",
 		anchor: `https://swift-election-olaleyeag20s-projects.vercel.app/`,
 		span: "Next.js + TypeScript + Tailwind CSS + Firebase Auth + Firestore",
@@ -75,7 +75,7 @@ let items = [
 let certificationItems = [
 	{
 		id: 1,
-		img: "../images/prograte.png",
+		img: "../images/prograte.jpg",
 		name: "Web Development Course(Node.js)",
 		anchor: `https://progate.com/path_certificate/e23f4e66rfr91h`,
 		span: "Progate",
@@ -96,122 +96,122 @@ let certificationItems = [
 	},
 	{
 		id: 4,
-		img: "../image",
+		img: "../images/intro.jpg",
 		name: "Meta: Introduction to Frontend Development",
 		anchor: `https://www.coursera.org/account/accomplishments/verify/ZS6GFFTAR8FR`,
 		span: "Coursera",
 	},
 	{
 		id: 5,
-		img: "../images",
+		img: "../images/vc.jpg",
 		name: "Meta: Version Control",
-		anchor: `https://www.coursera.org/account/accomplishments/verify/5TQ7W6KPALRM`,
+		anchor: `https://www.coursera.org/account/accomplishments/verify/ZS6GFFTAR8FR`,
 		span: "Coursera",
 	},
 	{
 		id: 6,
-		img: "../images",
+		img: "../images/js.jpg",
 		name: "Meta: Javascript Mastery",
-		anchor: `https://tolux001.github.io/Cheese-Cake-For-Twitter/#`,
+		anchor: `https://www.coursera.org/account/accomplishments/verify/5TQ7W6KPALRM`,
 		span: "Coursera",
 	},
 	{
 		id: 7,
-		img: "../images",
+		img: "../images/gen-ai.jpg",
 		name: "Generative AI",
-		anchor: `https://tolux-dev-profile-card.netlify.app/`,
+		anchor: `https://www.linkedin.com/learning/certificates/f63d0aefefc11598f34978aeb65696911b0601d256739fa999460de02a30f374?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BeOBlXb0KRv6aodBmO03PiA%3D%3D`,
 		span: "Linkedin Learning",
 	},
 ];
 let skillItem = [
 	{
 		id: 1,
-		img: "../images/prograte.png",
+		img: "../images/typescript.svg",
 		name: "TypeScript",
 	},
 	{
 		id: 2,
-		img: "../images/citadel.png",
+		img: "../images/javascript.svg",
 		name: "JavaScript",
 	},
 	{
 		id: 3,
-		img: "../images/gdsc.jpg",
+		img: "../images/react.svg",
 		name: "React.js",
 	},
 	{
 		id: 4,
-		img: "../image",
+		img: "../images/html-5.svg",
 		name: "HTML5",
 	},
 	{
 		id: 5,
-		img: "../images",
+		img: "../images/css-3.svg",
 		name: "CSS3",
 	},
 	{
 		id: 6,
-		img: "../images",
-		name: "Next.js",
+		img: "../images/node.svg",
+		name: "Node.js",
 	},
 	{
 		id: 7,
-		img: "../images",
+		img: "../images/nodejs.svg",
 		name: "Express.js",
 	},
 	{
 		id: 7,
-		img: "../images",
+		img: "../images/nextjs.svg",
 		name: "Next.js",
 	},
 	{
 		id: 7,
-		img: "../images",
+		img: "../images/firebase.svg",
 		name: "Firebase",
 	},
 	{
 		id: 7,
-		img: "../images",
+		img: "../images/vercel.svg",
 		name: "Vercel",
 	},
 	{
 		id: 7,
-		img: "../images",
+		img: "../images/git.svg",
 		name: "Git",
 	},
 	{
 		id: 7,
-		img: "../images",
+		img: "../images/github.svg",
 		name: "GitHub",
 	},
 	{
 		id: 7,
-		img: "../images",
-		name: "VS Code",
+		img: "../images/vscode.svg",
+		name: "VSCode",
 	},
 	{
 		id: 7,
-		img: "../images",
-		name: "Tailwind CSS",
+		img: "../images/tailwind.svg",
+		name: "Tailwind",
 	},
 	{
 		id: 7,
-		img: "../images",
+		img: "../images/figma.svg",
 		name: "Figma",
 	},
 	{
 		id: 7,
-		img: "../images",
+		img: "../images/mongodb.svg",
 		name: "MongoDB",
 	},
 	{
 		id: 7,
-		img: "../images",
+		img: "../images/redux.svg",
 		name: "Redux",
 	},
 	{
 		id: 7,
-		img: "../images",
+		img: "../images/python.svg",
 		name: "Python",
 	},
 ];
@@ -277,8 +277,8 @@ const skillItemFunction = (projects) => {
 	let skillList = projects.map((item) => {
 		return `
 		<div class="skill">
-	<img loading="lazy" src="${item.img}" alt="${item.name}" />
-	<p>"${item.name}"</p>
+	<img loading="lazy" src="${item.img}" alt=${item.name} />
+	<p>${item.name}</p>
 </div>`;
 	});
 	skillList = skillList.join("");

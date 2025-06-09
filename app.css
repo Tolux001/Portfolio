@@ -450,11 +450,10 @@ footer a {
 .skills {
 	margin: 2em auto;
 	width: min(768px, 95%);
-	display: flex;
-	flex-wrap: wrap;
-	gap: 1em;
-	justify-content: space-between;
-	align-items: center;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+	grid-gap: 1rem;
+	place-content: center;
 }
 
 .skill {
@@ -465,8 +464,8 @@ footer a {
 	border: 1px solid rgba(207, 203, 203, 0.5);
 	border-radius: 1em;
 	gap: 1em;
-	width: fit-content;
-	padding: 0.8em 1em;
+	width: 100px;
+	padding: 1.2em 0.7em;
 	/* box-shadow: 1px 1px 1px rgba(255, 255, 255, 1); */
 }
 
