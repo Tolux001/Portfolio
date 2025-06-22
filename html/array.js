@@ -5,7 +5,7 @@ let items = [
 		name: "Event Auth",
 		anchor: `https://eventauth.vercel.app/`,
 		span: "Next.js + TypeScript + Tailwind CSS + Firebase Auth + Firestore",
-		description: `An event management system that allows users to create, manage, and attend events. It includes user authentication, event creation, and a calendar view of upcoming events.`,
+		description: `An event management system that allows users to create & register for events. It includes user biometric authentication for registering at events.`,
 	},
 	{
 		id: 4,
@@ -118,7 +118,7 @@ let certificationItems = [
 	{
 		id: 7,
 		img: "../images/gen-ai.jpg",
-		name: "Generative AI",
+		name: "Generative AI Linkedin Professional",
 		anchor: `https://www.linkedin.com/learning/certificates/f63d0aefefc11598f34978aeb65696911b0601d256739fa999460de02a30f374?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BeOBlXb0KRv6aodBmO03PiA%3D%3D`,
 		span: "Linkedin Learning",
 	},
