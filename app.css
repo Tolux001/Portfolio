@@ -335,11 +335,15 @@ body {
 	align-items: center;
 	width: 100%;
 	max-width: 400px;
-	height: 30rem;
+	height: auto;
 	border-radius: 2em 0.25em 2em 0.25em;
 	padding: 0.4rem 1rem;
 	background: rgba(255, 255, 255, 0.1);
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+	transition: 0.3s ease-in-out;
+}
+.project--card--container:hover {
+	transform: scale(1.05);
 }
 
 .project--card--container img {
@@ -351,9 +355,7 @@ body {
 }
 
 .project--card--container img:hover {
-	transform: scale(1.09);
-	border-radius: 12px;
-	transition: 0.3s ease-in-out;
+	transform: scale(1.07);
 }
 
 .project--info {
@@ -494,55 +496,33 @@ footer a {
 	height: 26px;
 }
 
-/* Container for the technology buttons */
 .tech-buttons-container {
-	display: flex; /* Use flexbox to arrange buttons in a row */
-	flex-wrap: wrap; /* Allow buttons to wrap to the next line if space is limited */
-	gap: 8px; /* Space between the buttons */
-	margin-top: 10px; /* Add some space above the buttons */
-	margin-bottom: 15px; /* Add some space below the buttons */
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
 }
 
-/* Styling for individual technology buttons */
 .tech-button {
-	display: inline-block; /* Makes it act like a block but sit in line */
-	padding: 6px 12px; /* Top/bottom padding, left/right padding */
-	border: 1px solid #ccc; /* Light grey border */
-	border-radius: 20px; /* Rounded corners for a pill-like button look */
-	background-color: #f0f0f0; /* Light background color */
-	color: #333; /* Darker text color */
-	font-size: 0.85em; /* Slightly smaller font size */
-	font-weight: 500; /* Medium font weight */
-	cursor: default; /* Change cursor to indicate it's not a clickable link */
-	transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transitions for hover effects */
-	text-decoration: none; /* Remove underline if it's an anchor, though here it's a span */
-}
-
-/* Hover effect (optional) */
-.tech-button:hover {
-	background-color: #e0e0e0; /* Slightly darker background on hover */
-	border-color: #999; /* Darker border on hover */
-}
-
-/* If you want them to be clickable and feel more like buttons: */
-/* .tech-button:active {
-    background-color: #d0d0d0;
-    transform: translateY(1px);
-} */
-
-/* Example of more prominent button styling */
-/* .tech-button {
-    display: inline-block;
-    padding: 8px 16px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 0.9em;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+	display: inline-block;
+	padding: 6px 12px;
+	border: 1px solid #ccc;
+	border-radius: 20px;
+	background-color: #f0f0f0;
+	color: #333;
+	font-size: 0.85em;
+	font-weight: 500;
+	cursor: default;
+	transition: background-color 0.3s ease, border-color 0.3s ease;
+	text-decoration: none;
 }
 
 .tech-button:hover {
-    background-color: #0056b3;
-} */
+	background-color: #c5c2c2;
+	border-color: #999;
+	cursor: pointer;
+}
+
+.tech-button:active {
+	background-color: #d0d0d0;
+	transform: translateY(1px);
+}

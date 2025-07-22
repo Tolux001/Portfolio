@@ -158,16 +158,6 @@ let skillItem = [
 		name: "CSS3",
 	},
 	{
-		id: 6,
-		img: "../images/node.svg",
-		name: "Node.js",
-	},
-	{
-		id: 7,
-		img: "../images/nodejs.svg",
-		name: "Express.js",
-	},
-	{
 		id: 7,
 		img: "../images/nextjs.svg",
 		name: "Next.js",
@@ -209,11 +199,6 @@ let skillItem = [
 	},
 	{
 		id: 7,
-		img: "../images/mongodb.svg",
-		name: "MongoDB",
-	},
-	{
-		id: 7,
 		img: "../images/redux.svg",
 		name: "Redux",
 	},
@@ -221,6 +206,21 @@ let skillItem = [
 		id: 7,
 		img: "../images/python.svg",
 		name: "Python",
+	},
+	{
+		id: 7,
+		img: "../images/mongodb.svg",
+		name: "MongoDB",
+	},
+	{
+		id: 6,
+		img: "../images/node.svg",
+		name: "Node.js",
+	},
+	{
+		id: 7,
+		img: "../images/nodejs.svg",
+		name: "Express.js",
 	},
 ];
 
