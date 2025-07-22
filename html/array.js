@@ -1,6 +1,14 @@
 let items = [
 	{
-		id: 4,
+		id: 1,
+		img: "../images/Furnistore.png",
+		name: "Furni Store",
+		anchor: `https://furni-store-theta.vercel.app/`,
+		span: "Next.js + TypeScript + Tailwind CSS + Shadcn UI + Firebase Auth + Firestore + IMBB + PayStack Payment",
+		description: `An e-commerce furniture store that allows users to browse and purchase furniture items. It includes user authentication, product management, and payment integration.`,
+	},
+	{
+		id: 2,
 		img: "../images/evntauth.jpg",
 		name: "Event Auth",
 		anchor: `https://eventauth.vercel.app/`,
@@ -8,7 +16,7 @@ let items = [
 		description: `An event management system that allows users to create & register for events. It includes user biometric authentication for registering at events.`,
 	},
 	{
-		id: 4,
+		id: 3,
 		img: "../images/calmmind.jpg",
 		name: "Calm Mind",
 		anchor: `https://calm-mind-zeta.vercel.app/`,
@@ -24,7 +32,7 @@ let items = [
 		description: `School voting platform, flexible and rigid for any platform`,
 	},
 	{
-		id: 1,
+		id: 5,
 		img: "../images/dompro.jpg",
 		name: "DOM PROJECTS",
 		anchor: `https://toluxdomproject.netlify.app/`,
@@ -32,7 +40,7 @@ let items = [
 		description: `A landing that holds various DOM projects I have laid my hands on`,
 	},
 	{
-		id: 2,
+		id: 6,
 		img: "https://toluxdomproject.netlify.app/images/item-10.png",
 		name: "Chrome New Tab Page",
 		anchor: `https://tolux-new-tab-page.vercel.app/`,
@@ -40,7 +48,7 @@ let items = [
 		description: `A new tab page for browsers on start-up`,
 	},
 	{
-		id: 3,
+		id: 7,
 		img: "https://toluxdomproject.netlify.app/images/item-8.png",
 		name: "Drum Kit",
 		anchor: `https://tolux-drum-kit.netlify.app/`,
@@ -48,7 +56,7 @@ let items = [
 		description: `A web page where drum effect can be played by clicking or using the keyboard.`,
 	},
 	{
-		id: 5,
+		id: 8,
 		img: "../images/prettycash.jpg",
 		name: "Petty Cash",
 		anchor: `https://pettycash-dummy.netlify.app/`,
@@ -56,7 +64,7 @@ let items = [
 		description: `PettyCash landing page using react`,
 	},
 	{
-		id: 6,
+		id: 9,
 		img: "../images/cake.jpg",
 		name: "Cake For Twitter Desktop",
 		anchor: `https://tolux001.github.io/Cheese-Cake-For-Twitter/#`,
@@ -64,7 +72,7 @@ let items = [
 		description: `Landing Page For Popular Twitter Cheese Cake Website.`,
 	},
 	{
-		id: 7,
+		id: 10,
 		img: "../images/card.jpg",
 		name: "Profile Card",
 		anchor: `https://tolux-dev-profile-card.netlify.app/`,
@@ -224,15 +232,22 @@ const skillsContainer = document.querySelector("#skills-container");
 
 const projectItemFunction = (projects) => {
 	let projectList = projects.map((item) => {
+		//
+		const technologies = item.span.split(" + ");
+		const styledTechnologies = technologies
+			.map((tech) => {
+				return `<span class="tech-button">${tech.trim()}</span>`;
+			})
+			.join("");
+
 		return `
 		<div class="project--card--container">
 			<img src="${item.img}" alt="${item.name}" />
 			<div class="project--info">
 				<h2>${item.name}</h2>
 				<p>${item.description}</p>
-				<div>
-					<span>${item.span}</span>
-				</div>
+				<div class="tech-buttons-container"> ${styledTechnologies}
+                </div>
 				<a class="project-anchor" href="${item.anchor}" target="_blank" rel="noopener noreferrer">
 				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
 					<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"></path>
