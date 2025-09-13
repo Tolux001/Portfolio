@@ -124,7 +124,7 @@ body {
 		height: 15.5rem;
 	}
 	.home {
-		flex-flow: column nowrap;
+		flex-flow: column-reverse nowrap;
 		gap: 4em;
 		padding: 3em 5%;
 	}
@@ -230,8 +230,14 @@ body {
 	.home-content {
 		width: 100%;
 	}
+	p.par {
+		font-size: 20px;
+		line-height: 140%;
+		text-align: justify;
+	}
 	.home-img img {
-		max-width: 300px;
+		max-width: 200px;
+		border-radius: 50%;
 	}
 	.social-media a img {
 		margin: 15px 2px 15px 0;
