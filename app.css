@@ -167,8 +167,8 @@ body {
 	max-width: 450px;
 	border: 2px solid #eee;
 	border-radius: 12px;
-	filter: drop-shadow(0 3px 15px #007bfa);
-	box-shadow: 0 5px 10px rgba(255, 255, 255, 1);
+	/* filter: drop-shadow(0 3px 15px #007bfa); */
+	/* box-shadow: 0 5px 10px rgba(255, 255, 255, 1); */
 	opacity: 0;
 	animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
 	animation-delay: 0.5s, 0.5s;
@@ -210,7 +210,7 @@ body {
 	margin: 20px 10px 0 0;
 	background: #0ef;
 	border-radius: 40px;
-	box-shadow: 0 0 10px #0ef;
+	/* box-shadow: 0 0 10px #0ef; */
 	font-size: 16px;
 	color: #1f242d;
 	letter-spacing: 1px;
