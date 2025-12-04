@@ -181,21 +181,21 @@ body {
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
-	width: 40px;
-	height: 40px;
+	width: 30px;
+	height: 30px;
 	background: transparent;
 	border: 2px solid #0ef;
 	border-radius: 50%;
 	text-decoration: none;
-	margin: 10px 5px;
+	margin: 10px 3px;
 	cursor: pointer;
 	opacity: 0;
 	animation: slideLeft 1s ease forwards;
 	animation-delay: calc(0.1s * var(--i));
 }
 .social-media a img {
-	width: 26px;
-	height: 26px;
+	width: 20px;
+	height: 20px;
 	filter: invert(82%) sepia(30%) saturate(7438%) hue-rotate(140deg)
 		brightness(108%) contrast(105%);
 }
@@ -409,6 +409,7 @@ body {
 
 .project--text {
 	margin-top: 2em;
+	padding: 0 4px;
 	font-size: 16px;
 	color: #dad5d5;
 }
@@ -481,9 +482,13 @@ footer a {
 }
 
 @media (max-width: 500px) {
+	footer {
+		flex-direction: column;
+		padding-bottom: 1em;
+	}
 	.skills {
 		grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-		gap: 1rem;
+		grid-gap: 1rem;
 	}
 }
 .skill {
