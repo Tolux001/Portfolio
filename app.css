@@ -404,7 +404,7 @@ body {
 .project-anchor:hover {
 	background: #0ef;
 	color: #1f242d;
-	box-shadow: 0 0 20px rgba(14, 239, 255, 0.5);
+	/* box-shadow: 0 0 20px rgba(14, 239, 255, 0.5); */
 }
 
 .project--text {

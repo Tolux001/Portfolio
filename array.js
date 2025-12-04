@@ -1,5 +1,13 @@
 let items = [
 	{
+		id: 11,
+		img: "../images/glam.png",
+		name: "Glamistry By Zihanny",
+		anchor: `https://glamistrybyzihanny.vercel.app/`,
+		span: "Next.js + TypeScript + Tailwind CSS + Shadcn UI + Firebase Auth + Firestore + IMBB + PayStack Payment",
+		description: `An e-commerce web app for a make up business that allows the automation of purchase and sales. Which includes skin park recommendation for people and addition or subtraction of materials from a package.`,
+	},
+	{
 		id: 1,
 		img: "../images/Furnistore.png",
 		name: "Furni Store",
